@@ -68,19 +68,19 @@ body {
 }
 
 .ocbox1 {
-    background-color: #4f4a4a;
+    background-color: rgb(79, 74, 74);
     background-image: url('./IMG/backgrounds/bg_carlo_Saraceni1.jpg');
     background-blend-mode: soft-light;
 }
 
 .ocbox2 {
-    background-color: #4f4a4a;
+    background-color: rgb(79, 74, 74);
     background-image: url('./IMG/backgrounds/bg_paint1.png');
     background-blend-mode: soft-light;
 }
 
 .ocbox3 {
-    background-color: #4f4a4a;
+    background-color: rgb(79, 74, 74);
     background-image: url('./IMG/backgrounds/bg_simone_pellegrini1.jpg');
     background-blend-mode: soft-light;
 }
