@@ -65,7 +65,7 @@ body {
     background-size: cover;
 
     /* background image filter */
-    background-color: hsl(0, 3%, 30%);
+    background-color: #4f4a4a;
     background-blend-mode: soft-light;
 }
 
