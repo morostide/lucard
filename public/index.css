@@ -68,21 +68,36 @@ body {
 }
 
 .ocbox1 {
-    background-color: rgb(79, 74, 74);
     background-image: url('https://lucard.neocities.org/IMG/backgrounds/bg_carlo_Saraceni1.jpg');
+    background-color: rgb(79, 74, 74);
     background-blend-mode: soft-light;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .ocbox2 {
-    background-color: rgb(79, 74, 74);
     background-image: url('https://lucard.neocities.org/IMG/backgrounds/bg_paint1.png');
+    background-color: rgb(79, 74, 74);
     background-blend-mode: soft-light;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .ocbox3 {
-    background-color: rgb(79, 74, 74);
     background-image: url('https://lucard.neocities.org/IMG/backgrounds/bg_simone_pellegrini1.jpg');
+    background-color: rgb(79, 74, 74);
     background-blend-mode: soft-light;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 
