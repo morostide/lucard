@@ -1,19 +1,46 @@
+@media (max-width: 900px) {
+    .ocboxrow {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column1 {
+        float: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .oc_grid_card {
+        width: unset;
+    }
+
+    .oc_grid {
+        padding: 0;
+    }
+}
+
 [data-tab-content] {
     display: none;
-  }
-  
-  .active[data-tab-content] {
+}
+
+.active[data-tab-content] {
     display: block;
-  }
+}
+
+
+main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ocboxrow {
+    width: 100%;
+    display: flex;
+}
 
 body {
-    position: absolute;
-    margin: auto;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-
     background-color: #F5E9E9;
     font-family: Georgia, Times, Times New Roman, serif;
     font-size: 12px;
@@ -33,7 +60,7 @@ body {
 }
 
 .column2 {
-    width: 300px;
+    max-width: 300px;
     padding: 10px;
     float: center;
     text-align: justify;
@@ -42,10 +69,9 @@ body {
 }
 
 .descBox {
-    /* box stats */
-    margin: auto;
-    margin-right: 15px;
-    padding: 5px;
+    /* margin: auto;
+  margin-right: 15px;
+  padding: 5px; */
     /* width: 600px; */
     height: auto;
     color: #757A69;
@@ -138,9 +164,9 @@ body {
     font-size: 12px;
     margin: 4px 2px;
     cursor: pointer;
-  }
+}
 
-  .buttonChar {
+.buttonChar {
     background-color: #757a69;
     color: #F5E9E9;
     padding: 5px 10px;
@@ -150,7 +176,7 @@ body {
     font-size: 12px;
     margin: 4px 2px;
     cursor: pointer;
-  }
+}
 
 .oc_grid a {
     color: #dababa;
