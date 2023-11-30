@@ -9,16 +9,6 @@
     }
 }
 
-@media (max-width: 500px) {
-    .oc_grid_card {
-        width: unset;
-    }
-
-    .oc_grid {
-        padding: 0;
-    }
-}
-
 [data-tab-content] {
     display: none;
 }
@@ -81,16 +71,24 @@ body {
     /* box stats */
     margin: auto;
     padding: 5px;
-    width: 900px;
-    height: 600px;
+    max-width: 900px;
+    min-height: 600px;
 
     /* box background */
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+}
 
-    /* background image filter */
+@media (max-width: 500px) {
+  .oc_grid_card {
+      width: unset!important;
+  }
+
+  .oc_grid {
+      padding: 0!important;
+  }
 }
 
 .ocbox1 {
