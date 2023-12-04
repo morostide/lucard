@@ -1,0 +1,197 @@
+@media (max-width: 900px) {
+    .ocboxrow {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column1 {
+        float: none;
+    }
+}
+
+[data-tab-content] {
+    display: none;
+}
+
+.active[data-tab-content] {
+    display: block;
+}
+
+
+main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ocboxrow {
+    width: 100%;
+    display: flex;
+}
+
+body {
+    background-color: #F5E9E9;
+    font-family: Georgia, Times, Times New Roman, serif;
+    font-size: 12px;
+}
+
+/* CENTER THE ENTIRE PAGE */
+.column1 {
+    width: 300px;
+    padding: 5%;
+    float: left;
+    text-align: justify;
+    color: #F5E9E9;
+}
+
+.column1 img {
+    text-align: center;
+}
+
+.column2 {
+    max-width: 300px;
+    padding: 10px;
+    float: center;
+    text-align: justify;
+    font-size: 14px;
+    line-height: 110%;
+}
+
+.descBox {
+    /* margin: auto;
+  margin-right: 15px;
+  padding: 5px; */
+    /* width: 600px; */
+    height: auto;
+    color: #757A69;
+}
+
+.ocbox {
+    /* box stats */
+    margin: auto;
+    padding: 5px;
+    max-width: 900px;
+    min-height: 600px;
+
+    /* box background */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+@media (max-width: 500px) {
+  .oc_grid_card {
+      width: unset!important;
+  }
+
+  .oc_grid {
+      padding: 0!important;
+  }
+}
+
+.ocbox1 {
+    background-image: url('./IMG/backgrounds/bg_carlo_Saraceni1.jpg');
+    background-color: rgb(79, 74, 74);
+    background-blend-mode: soft-light;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.ocbox2 {
+    background-image: url('./IMG/backgrounds/bg_paint1.png');
+    background-color: rgb(79, 74, 74);
+    background-blend-mode: soft-light;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.ocbox3 {
+    background-image: url('./IMG/backgrounds/bg_simone_pellegrini1.jpg');
+    background-color: rgb(79, 74, 74);
+    background-blend-mode: soft-light;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+/* OC GRID CSS */
+/* entire grid of all ocs */
+.oc_grid {
+    margin-top: auto;
+    margin-bottom: auto;
+    height: auto;
+    width: auto;
+    justify-content: center;
+    padding: 5%;
+    text-align: center;
+    color: #F5E9E9;
+}
+
+/* each oc "card" */
+.oc_grid_card {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 150px;
+    height: 150px;
+    padding: 1px;
+    text-align: center;
+    font-style: italic;
+    font-size: 16px;
+}
+
+/* All links and images with links */
+
+.button {
+    background-color: #757A69;
+    color: #F5E9E9;
+    padding: 1px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.buttonChar {
+    background-color: #757a69;
+    color: #F5E9E9;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.oc_grid a {
+    color: #dababa;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 1px;
+}
+
+.oc_grid a:hover {
+    color: lightcoral;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+img.img_icon {
+    width: 100px;
+    padding: 5px;
+}
+
+/* IMAGE OVERLAYS */
