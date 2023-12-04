@@ -16,7 +16,7 @@ body {
     color: #775922;
 
     background-color: #F5E9E9;
-    background-image: url('./IMG/backgrounds/bg_paint1.png');
+    background-image: url('../../../IMG/backgrounds/bg_Balthasar_Paul_Ommeganck1.jpg');
     background-color: rgb(79, 74, 74);
     background-blend-mode: soft-light;
 
@@ -31,6 +31,20 @@ body {
 
     /* position: absolute; THIS THING WAS CAUSING ME 4 HOURS OF GRIEF. 
     I WONDERED WHY MY PAGE WOULDNT CENTER. ITS BECAUSE OF THIS */
+}
+
+a:link, a:visited, a:active, a:hover {
+    color: #b9a786;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 1px;
+}
+
+a:hover, a:active {
+    color: #966c1f;
+    font-weight: bold;
+    font-style: italic;
 }
 
 #navbar{
@@ -89,9 +103,12 @@ div::-webkit-scrollbar-thumb {
 
 /* ROW 1 */
 #icon {
+    display: flex;
     max-height: 250px;
     width: 300px;
     align-items: center;
+    align-content: center;
+    justify-content: center;
 }
 
 #stats {
