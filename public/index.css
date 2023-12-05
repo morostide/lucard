@@ -1,0 +1,137 @@
+body {
+    /* overflow-x: hidden; */
+    /* font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', Osaka, sans-serif; */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 13px;
+    letter-spacing: 0.1px;
+    color: #1f1910;
+
+    background-color: #F5E9E9;
+    background-image: url('./IMG/backgrounds/bg_HackertLandschaft.jpg');
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-color: rgb(192, 181, 172);
+    background-blend-mode: soft-light;
+}
+
+a:link, a:visited, a:active, a:hover {
+    color: #775922;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 1px;
+}
+
+a:hover, a:active {
+    color: #966c1f;
+    font-weight: bold;
+    text-shadow: 0px 0px 4px white;
+    
+}
+
+semiHeader {
+    font-family: Times, Times, Times New Roman, serif;
+    font-size: 30px;
+    letter-spacing: 1px;
+
+    font-weight: bold;
+    text-transform: lowercase;
+
+    background-color: antiquewhite;
+    color: #966c1f;
+
+    padding: 2px;
+}
+
+/* CUSTOM SCROLLBAR */
+div::-webkit-scrollbar {
+    width: 5px;
+    background-color: #b9a786;
+}
+
+div::-webkit-scrollbar-thumb {
+    background-color: #775922;
+    padding: 5%;
+}
+
+.container {
+    width: 900px;
+    height: 610px;
+    margin: auto;
+    position: fixed;
+
+    background-image: url('./IMG/indexpics/bg1.png');
+
+    top: 50%;
+    transform: translate(0, -50%);
+    /* left: 50%; */
+    /* -webkit-transform: translate(-50%, -50%); */
+
+    /* To center everything */
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: auto;
+
+}
+
+.letter {
+    position: relative;
+    z-index: 1;
+}
+
+
+.portrait_img {
+    position: absolute;
+    z-index: 2;
+
+    top: 23%;
+    left: 18%;
+
+    height: 330px;
+    width: 180px;
+
+    background-image: url('./IMG/faust/faustrecolor1.png');
+    background-size: 400px;
+    background-position: right;
+
+    background-color: #1f1910;
+}
+
+.frame {
+    position: absolute;
+    z-index: 3;
+    top: 19%;
+    left: 15%;
+}
+
+
+.accessories {
+    position: absolute;
+    z-index: 4;
+}
+
+.rockinghorse {
+    position: absolute;
+    z-index: 5;
+    top: -10%;
+    right: 5%;
+}
+
+.textbox {
+    position: absolute;
+    z-index: 5;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    height: 300px;
+    width: 350px;
+    padding: 10px;
+
+    top: 25%;
+    right: 15%;
+
+}
