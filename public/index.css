@@ -121,6 +121,16 @@ div::-webkit-scrollbar-thumb {
     right: 5%;
 }
 
+.counter{
+    position: absolute;
+    z-index: 5;
+    /* top: -100%;
+    left: 100%; */
+
+    top: -10%;
+    /* transform: translate(0, -50%); */
+}
+
 .textbox {
     position: absolute;
     z-index: 5;
