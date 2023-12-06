@@ -1,3 +1,11 @@
+[data-tab-content] {
+    display: none;
+}
+
+.active[data-tab-content] {
+    display: block;
+}
+
 body {
     /* overflow-x: hidden; */
     /* font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', Osaka, sans-serif; */
@@ -16,7 +24,10 @@ body {
     background-blend-mode: soft-light;
 }
 
-a:link, a:visited, a:active, a:hover {
+a:link,
+a:visited,
+a:active,
+a:hover {
     color: #775922;
     font-weight: bold;
     text-decoration: underline;
@@ -24,14 +35,15 @@ a:link, a:visited, a:active, a:hover {
     text-decoration-thickness: 1px;
 }
 
-a:hover, a:active {
+a:hover,
+a:active {
     color: #966c1f;
     font-weight: bold;
     text-shadow: 0px 0px 4px white;
-    
+
 }
 
-semiHeader {
+header, semiHeader {
     font-family: Times, Times, Times New Roman, serif;
     font-size: 30px;
     letter-spacing: 1px;
@@ -39,13 +51,16 @@ semiHeader {
     font-weight: bold;
     text-transform: lowercase;
 
-    background-color: antiquewhite;
     color: #966c1f;
 
     padding: 2px;
 }
 
-/* CUSTOM SCROLLBAR */
+semiHeader{
+    background-color: antiquewhite;
+}
+
+/*                 CUSTOM SCROLLBAR                 */
 div::-webkit-scrollbar {
     width: 5px;
     background-color: #b9a786;
@@ -56,33 +71,67 @@ div::-webkit-scrollbar-thumb {
     padding: 5%;
 }
 
-.container {
-    width: 900px;
+/*                 END OF CUSTOM SCROLLBAR                 */
+
+.allContainer {
+    position: relative;
+    width: 1100px;
     height: 610px;
-    margin: auto;
-    position: fixed;
 
-    background-image: url('./IMG/indexpics/bg1.png');
-
-    top: 50%;
-    transform: translate(0, -50%);
-    /* left: 50%; */
-    /* -webkit-transform: translate(-50%, -50%); */
-
-    /* To center everything */
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
     margin-top: auto;
-
+    top: -50%;
+    transform: translate(0%, 25%);
 }
 
-.letter {
-    position: relative;
+.papercontainer {
+    background-image: url('./IMG/indexpics/paper1.png');
+    width: 260px;
+    height: 600px;
+    margin: auto;
+    position: absolute;
+
+    right: 0%;
+
+    z-index: 0;
+}
+
+.cardcontainer {
+    background-image: url('./IMG/indexpics/bg1.png');
+    width: 900px;
+    height: 610px;
+    margin: auto;
+    position: absolute;
     z-index: 1;
 }
 
+/*                 BEGINNING OF PAPER IMAGES & POSITIONABLE ITEMS                  */
+.listDisplay {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+
+
+    top:5%;
+    right:0%;
+    width: 180px;
+    height: 550px;
+
+    padding: 10px;
+}
+
+.listItem {
+    margin: 5px;
+    padding: 5px;
+}
+
+
+/*                 BEGINNING OF PAPER IMAGES & POSITIONABLE ITEMS                  */
+
+/*                 BEGINNING OF CARDCONTAINER IMAGES & POSITIONABLE ITEMS                  */
 
 .portrait_img {
     position: absolute;
@@ -121,14 +170,10 @@ div::-webkit-scrollbar-thumb {
     right: 5%;
 }
 
-.counter{
+.counter {
     position: absolute;
     z-index: 5;
-    /* top: -100%;
-    left: 100%; */
-
     top: -10%;
-    /* transform: translate(0, -50%); */
 }
 
 .textbox {
@@ -145,3 +190,5 @@ div::-webkit-scrollbar-thumb {
     right: 15%;
 
 }
+
+/*                 END OF ALL  CARDCONTAINER IMAGES & POSITIONABLE ITEMS                 */
