@@ -1,15 +1,7 @@
-[data-tab-content] {
-    display: none;
-}
-
-.active[data-tab-content] {
-    display: block;
-}
-
 body {
     /* overflow-x: hidden; */
-    /* font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', Osaka, sans-serif; */
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', Osaka, sans-serif;
+    /* font-family: 'Times New Roman', Times, serif; */
     font-size: 13px;
     letter-spacing: 0.1px;
     color: #1f1910;
@@ -22,6 +14,8 @@ body {
 
     background-color: rgb(192, 181, 172);
     background-blend-mode: soft-light;
+    /* margin-left: 10%;
+    margin-right: 10%; */
 }
 
 a:link,
@@ -43,7 +37,8 @@ a:active {
 
 }
 
-header, semiHeader {
+header,
+semiHeader {
     font-family: Times, Times, Times New Roman, serif;
     font-size: 30px;
     letter-spacing: 1px;
@@ -54,10 +49,6 @@ header, semiHeader {
     color: #966c1f;
 
     padding: 2px;
-}
-
-semiHeader{
-    background-color: antiquewhite;
 }
 
 /*                 CUSTOM SCROLLBAR                 */
@@ -73,38 +64,57 @@ div::-webkit-scrollbar-thumb {
 
 /*                 END OF CUSTOM SCROLLBAR                 */
 
-.allContainer {
-    position: relative;
-    width: 1100px;
-    height: 610px;
-
+/* margin-top: auto;
+    margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
-    left: 0;
-    right: 0;
     margin-top: auto;
-    top: -50%;
-    transform: translate(0%, 25%);
+    top: 50%;
+    transform: bottom(-50%);
+    transform: translate(0%, 50%);*/
+
+
+.itemContainer {
+    position: relative;
+    width: 1300px;
+    height: 610px;
+
+    /* HORIZONTALLY center */
+    margin-left: auto;
+    margin-right: auto;
+
+    /* This doesnt vertically center it perfectly, i dont know what else to do */
+    top: 50%;
+    transform: translateY(25%);
+
 }
+
 
 .papercontainer {
     background-image: url('./IMG/indexpics/paper1.png');
+    background-repeat: no-repeat;
+
     width: 260px;
     height: 600px;
+
     margin: auto;
     position: absolute;
 
     right: 0%;
-
     z-index: 0;
 }
 
 .cardcontainer {
     background-image: url('./IMG/indexpics/bg1.png');
+    background-repeat: no-repeat;
+
     width: 900px;
     height: 610px;
+
     margin: auto;
     position: absolute;
+
+    right: 14%;
     z-index: 1;
 }
 
@@ -114,9 +124,8 @@ div::-webkit-scrollbar-thumb {
     display: flex;
     flex-direction: column;
 
-
-    top:5%;
-    right:0%;
+    top: 5%;
+    right: 0%;
     width: 180px;
     height: 550px;
 
@@ -127,7 +136,6 @@ div::-webkit-scrollbar-thumb {
     margin: 5px;
     padding: 5px;
 }
-
 
 /*                 BEGINNING OF PAPER IMAGES & POSITIONABLE ITEMS                  */
 
