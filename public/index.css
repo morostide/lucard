@@ -64,29 +64,22 @@ div::-webkit-scrollbar-thumb {
 
 /*                 END OF CUSTOM SCROLLBAR                 */
 
-/* margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    top: 50%;
-    transform: bottom(-50%);
-    transform: translate(0%, 50%);*/
+
+.containAll {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    /* padding-left: 50px; */
+    padding-right: 50px;
+    display: grid;
+    place-items: center;
+}
 
 
 .itemContainer {
     position: relative;
     width: 1300px;
     height: 610px;
-
-    /* HORIZONTALLY center */
-    margin-left: auto;
-    margin-right: auto;
-
-    /* This doesnt vertically center it perfectly, i dont know what else to do */
-    top: 50%;
-    transform: translateY(25%);
-
 }
 
 
