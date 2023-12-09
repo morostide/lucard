@@ -1,7 +1,5 @@
 body {
-    /* overflow-x: hidden; */
     font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', Osaka, sans-serif;
-    /* font-family: 'Times New Roman', Times, serif; */
     font-size: 13px;
     letter-spacing: 0.1px;
     color: #1f1910;
@@ -14,8 +12,6 @@ body {
 
     background-color: rgb(192, 181, 172);
     background-blend-mode: soft-light;
-    /* margin-left: 10%;
-    margin-right: 10%; */
 }
 
 a:link,
@@ -38,17 +34,30 @@ a:active {
 }
 
 header,
-semiHeader {
+semiHeader, menuLink {
     font-family: Times, Times, Times New Roman, serif;
-    font-size: 30px;
-    letter-spacing: 1px;
+    font-size: 40px;
+    letter-spacing: 2px;
 
     font-weight: bold;
-    text-transform: lowercase;
+    text-transform: uppercase;
+    font-style: italic;
 
     color: #966c1f;
 
     padding: 2px;
+}
+
+semiheader {
+    margin-top: 50%;
+    font-size: 25px;
+    color: #5f7c9e;
+}
+
+menuLink {
+    color: #a36e61;
+    font-size: 15px;
+    text-transform: lowercase;
 }
 
 /*                 CUSTOM SCROLLBAR                 */
@@ -69,7 +78,6 @@ div::-webkit-scrollbar-thumb {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    /* padding-left: 50px; */
     padding-right: 50px;
     display: grid;
     place-items: center;
@@ -118,16 +126,29 @@ div::-webkit-scrollbar-thumb {
     flex-direction: column;
 
     top: 5%;
-    right: 0%;
+    right: 6%;
     width: 180px;
     height: 550px;
 
-    padding: 10px;
+    padding: 15px;
+    justify-content: center;
 }
 
 .listItem {
     margin: 5px;
     padding: 5px;
+    display: inline-block;
+    font-style: italic;
+}
+
+.listItemPic{
+    display: inline-block;
+}
+
+.listTextLink {
+    display: inline-block;
+    margin-left: 5px;
+    text-align: center;
 }
 
 /*                 BEGINNING OF PAPER IMAGES & POSITIONABLE ITEMS                  */
@@ -144,11 +165,12 @@ div::-webkit-scrollbar-thumb {
     height: 330px;
     width: 180px;
 
-    background-image: url('./IMG/faust/faustrecolor1.png');
-    background-size: 400px;
-    background-position: right;
+    background-image: url('./IMG/indexpics/vhd1.jpg');
+    background-size: 300px;
+    background-position: center;
 
-    background-color: #1f1910;
+    background-color: rgba(192, 181, 172, 0.5);
+    background-blend-mode: soft-light;
 }
 
 .frame {
@@ -158,15 +180,43 @@ div::-webkit-scrollbar-thumb {
     left: 15%;
 }
 
+.rightAccessories {
+    position: absolute;
+    z-index: 1;
+
+    right: 0;
+    top: -5%;
+}
+
 
 .accessories {
     position: absolute;
     z-index: 4;
+
+    bottom: -5%;
+    left: -5%;
+}
+
+.fairy {
+    position: absolute;
+    z-index: 4;
+
+    top: -18%;
+    right: -2%;
+}
+
+.fairy2 {
+    position: absolute;
+    z-index: 4;
+
+    top: 50%;
+    left: -7%;
 }
 
 .rockinghorse {
     position: absolute;
     z-index: 5;
+
     top: -10%;
     right: 5%;
 }
