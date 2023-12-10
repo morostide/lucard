@@ -107,7 +107,6 @@ div::-webkit-scrollbar-thumb {
     top: calc(50% - 305px); */
 }
 
-
 .itemContainer {
     position: relative;
     width: 1300px;
@@ -119,7 +118,6 @@ div::-webkit-scrollbar-thumb {
 
     display: flex;
     flex-direction: column;
-
     align-items: center;
     justify-content: center;
 
@@ -129,6 +127,11 @@ div::-webkit-scrollbar-thumb {
 
     left: -1%;
     z-index: 0;
+}
+
+.containLeftBox {
+    height: auto;
+    width: auto;
 }
 
 
@@ -158,6 +161,18 @@ div::-webkit-scrollbar-thumb {
 
     right: 14%;
     z-index: 1;
+}
+
+.musicplayercontainer {
+    width: auto;
+    height: auto;
+
+    margin: auto;
+    position: fixed;
+
+    right: 3%;
+    bottom: 3%;
+    z-index: 5;
 }
 
 /*                 BEGINNING OF PAPER IMAGES & POSITIONABLE ITEMS                  */
@@ -314,16 +329,25 @@ div::-webkit-scrollbar-thumb {
 
 }
 
-.calendar {
-    margin: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 100%;
+.topBox {
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    padding: 10px 5px;
+
+    height: 350px;
+    width: 200px;
 
     background-image: url(./IMG/indexpics/paper1.png);
     background-position: center;
     background-repeat: no-repeat;
 }
+
+.content {
+    margin: 10px;
+    padding: 5px;
+}
+
 
 #moonLink {
     color: #5f7c9e;
@@ -342,9 +366,11 @@ div::-webkit-scrollbar-thumb {
 }
 
 
-.bottomLeftBox {
+.mailBox {
     height: 150px;
-    width: 100%;
+    width: 200px;
+
+    padding: 10px 5px;
 
     justify-content: center;
     align-items: center;
@@ -352,19 +378,20 @@ div::-webkit-scrollbar-thumb {
     background-image: url('./IMG/indexpics/envelopeMini.png');
     background-position: center;
     background-repeat: no-repeat;
-
+    /* 
     margin-top: 10px;
-    padding: 10px;
+    padding: 10px; */
 
     overflow-y: scroll;
     overflow-x: hidden;
 }
 
-.bottomLeftBoxLinks {
+.sideLinkDiv {
     height: auto;
     width: 100%;
 
     overflow-x: hidden;
+    overflow-y: hidden;
 
     display: flex;
     flex-direction: row;
@@ -372,8 +399,8 @@ div::-webkit-scrollbar-thumb {
     align-items: center;
 }
 
-.leftBoxLinks {
-    margin: 3px;
+.sideLinkStyle {
+    margin: 0px 3px 3px;
     padding: 2px;
 
     justify-content: center;
@@ -388,9 +415,10 @@ div::-webkit-scrollbar-thumb {
     text-shadow: 0px 0px 4px white;
 }
 
-.leftBoxLinks:hover {
+.sideLinkStyle:hover {
     color: #99b2cf;
     letter-spacing: 2px;
 }
+
 
 /*                 END OF ALL  CARDCONTAINER IMAGES & POSITIONABLE ITEMS                 */

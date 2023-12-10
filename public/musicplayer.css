@@ -1,7 +1,7 @@
 #musicplayer {
-    background: white;
+    background: #F5E9E9;
     /* background color of player */
-    border: 2px solid #e74492;
+    border: 1px solid #5f7c9e;
     /* border around player */
     width: 200px;
     /* width of the player */
@@ -10,7 +10,7 @@
 .songtitle {
     padding: 5px;
     /* padding around song title */
-    border-bottom: 2px solid #e74492;
+    border-bottom: 1px solid #5f7c9e;
     /* border under song title */
     display: block;
 }
@@ -18,7 +18,7 @@
 .controls {
     font-size: 18px !important;
     /* size of controls */
-    background-color: #dbfcff;
+    background-color: #F5E9E9;
     /* background color of controls */
     text-align: center;
     width: 100%;
@@ -30,7 +30,7 @@
 }
 
 .seeking {
-    background-color: #dbfcff;
+    background-color: #F5E9E9;
     /* background color of seeking bar */
     display: flex;
     justify-content: space-evenly;
@@ -54,14 +54,14 @@ i.fas.fa-pause,
 i.fas.fa-play,
 i.fas.fa-forward,
 i.fas.fa-backward {
-    color: #e74492;
+    color: #5f7c9e;
     /* color of controls */
 }
 
 input[type=range] {
     -webkit-appearance: none;
     width: 100%;
-    background-color: #dbfcff;
+    background-color: #F5E9E9;
     /* background color of seeking bar - make the color same as .seeking background color */
 }
 

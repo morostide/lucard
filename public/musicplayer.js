@@ -23,21 +23,29 @@ let curr_track = document.getElementById("music");
 // CATBOX.MOE IS RECOMMENDED FOR UPLOADING MP3 FILES
 let track_list = [
     {
-        name: "inabakumori feat. kaai yuki - lagtrain",
-        path: "https://files.catbox.moe/9ywkki.mp3"
+        name: "Enchanted Forest ✩ Barbie of Swan Lake",
+        path: "https://files.catbox.moe/1vka1b.mp3"
     },
     {
-        name: "inabakumori feat. kaai yuki - kimi ni kaikisen",
-        path: "https://files.catbox.moe/1pxdnw.mp3"
+        name: "Enchanted Forest II ✩ Barbie of Swan Lake",
+        path: "https://files.catbox.moe/zg5sqh.mp3"
     },
     {
-        name: "pinocchio-p feat. hatsune miku - god-ish",
-        path: "https://files.catbox.moe/xv3vdj.mp3"
+        name: "Painting ✩ Barbie of Swan Lake",
+        path: "https://files.catbox.moe/s392q2.mp3"
     },
     {
-        name: "syudou feat. hatsune miku - her boyfriend, jude",
-        path: "https://files.catbox.moe/49iuxl.mp3",
+        name: "Forest Restored ✩ Barbie of Swan Lake",
+        path: "https://files.catbox.moe/992k13.mp3",
     },
+    {
+        name: "Star Stable ✩ Jorvegian Mornings",
+        path: "https://files.catbox.moe/pdpkhe.mp3",
+    },
+    {
+        name: "Ares no Tenbin: Dreams",
+        path: "https://files.catbox.moe/lb03hg.mp3",
+    }
 ];
 //
 //
