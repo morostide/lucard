@@ -23,8 +23,8 @@ body {
 
     background-color: rgb(192, 181, 172);
     background-blend-mode: soft-light;
-    /* margin-left: 10%;
-    margin-right: 10%; */
+
+    cursor: url('./IMG/cursors/cursor_strawberry1.png'), auto;
 }
 
 a:link,
@@ -316,8 +316,31 @@ div::-webkit-scrollbar-thumb {
 
 .calendar {
     margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     width: 100%;
+
+    background-image: url(./IMG/indexpics/paper1.png);
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
+#moonLink {
+    color: #5f7c9e;
+    text-decoration: dashed;
+    font-size: 9pt;
+}
+
+#external {
+    /* background-color: #000; */
+    padding: 0px;
+    border: 0;
+    margin: 0px;
+    overflow: hidden;
+    width: 140px;
+    height: 340px;
+}
+
 
 .bottomLeftBox {
     height: 150px;
@@ -337,7 +360,7 @@ div::-webkit-scrollbar-thumb {
     overflow-x: hidden;
 }
 
-.bottomLeftBoxLinks{
+.bottomLeftBoxLinks {
     height: auto;
     width: 100%;
 
@@ -349,7 +372,7 @@ div::-webkit-scrollbar-thumb {
     align-items: center;
 }
 
-.leftBoxLinks{
+.leftBoxLinks {
     margin: 3px;
     padding: 2px;
 
