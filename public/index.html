@@ -11,7 +11,8 @@
     <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="stylesheet" type="text/css" href="musicplayer.css">
 
-    <script src="https://kit.fontawesome.com/f936906ae0.js" crossorigin="anonymous" defer></script> <!-- add this to the head!! --> 
+    <script src="https://kit.fontawesome.com/f936906ae0.js" crossorigin="anonymous" defer></script>
+    <!-- add this to the head!! -->
     <script src="sparkleCursor.js" defer></script>
     <script src="musicplayer.js" defer></script>
     <script src="tabs.js" defer></script>
@@ -110,6 +111,11 @@
                                 <img src="./IMG/stamps/stamp_coffee.gif">
                             </div>
                             <div id="misc" data-tab-content class="content" align="center">
+                                <p><img src="./IMG/88x31/lucard.png"></p>
+                                <p>
+                                    <textarea><a href="https://lucard.neocities.org/"><img src="https://lucard.neocities.org/IMG/88x31/lucard.png"></a></textarea>
+                                </p>
+                                <p>add my button to your site with the code below!</p>
                             </div>
                         </div>
                         <div class="sideLinkDiv" id="two">
@@ -119,7 +125,7 @@
                             </div>
                             <div data-tab-target="#misc" class="sideLinkStyle">
                                 <img src="./IMG/favicons/favicon_redbutterfly1.gif">
-                                misc
+                                link me!
                             </div>
                         </div>
                     </div>
@@ -206,12 +212,12 @@
                     <img class="unicorn" src="./IMG/gifs/gif_unicorn.gif">
                     <img class="rockinghorse" src="./IMG/gifs/gif_rockinghorse1.gif">
                     <div class="textbox">
-                        <p>
                         <header>☙ welcome</header>
-                        </p>
                         <div align="center">
+                                <a href="https://lucard.neocities.org/"><img src="./IMG/88x31/lucard.png"></a>
                             <p>
                                 aspho ♥ 26 ♥ it/he
+                            </p>
                         </div>
                         <p>
                             12/5/23: this site is still a huge WIP, im constantly adding to it near daily.
@@ -232,30 +238,31 @@
                         <div>
                             <marquee scrollamount="8" class="songtitle"></marquee>
                         </div>
-                 
+
                         <table class="controls">
                             <tr>
                                 <td>
                                     <div class="prev-track" onclick="prevTrack()"><i class="fas fa-backward"></i></div>
                                 </td>
                                 <td>
-                                    <div class="playpause-track" onclick="playpauseTrack()" ><i class="fas fa-play"></i></div>
+                                    <div class="playpause-track" onclick="playpauseTrack()"><i class="fas fa-play"></i>
+                                    </div>
                                 </td>
                                 <td>
                                     <div class="next-track" onclick="nextTrack()"><i class="fas fa-forward"></i></div>
                                 </td>
                             </tr>
                         </table>
-                 
+
                         <div class="seeking">
                             <div class="current-time">00:00</div>
-                 
+
                             <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
-                 
+
                             <div class="total-duration">0:00</div>
                         </div>
-                 
-                        <audio id="music" src=""></audio> 
+
+                        <audio id="music" src=""></audio>
                     </div>
                 </div>
             </div>
