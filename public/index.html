@@ -9,283 +9,113 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <link rel="stylesheet" type="text/css" href="index.css">
-    <link rel="stylesheet" type="text/css" href="musicplayer.css">
-
-    <script src="https://kit.fontawesome.com/f936906ae0.js" crossorigin="anonymous" defer></script>
-    <!-- add this to the head!! -->
-    <script src="sparkleCursor.js" defer></script>
-    <script src="musicplayer.js" defer></script>
-    <script src="tabs.js" defer></script>
 </head>
 
 <main>
 
     <body>
         <div class="containAll">
-            <div class="itemContainer">
-                <div class="leftcontainer">
-                    <div class="containLeftBox">
-                        <div class="topBox">
-                            <div id="calendars" data-tab-content class="active" align="center">
-                                <div class="content">
-                                    <fieldset>
-                                        <center>
-                                            <strong>
-                                                <a href="http://nosi-mizuhiki.com/modules/tinyd5/" id="moonLink"
-                                                    target="_blank" rel="nofollow">Today's Moon phase</a>
-                                            </strong>
-                                            <iframe id="external"
-                                                src="https://boy-script.ssl-lolipop.jp/blog_tool/moon1.php">
-                                                Unsupported
-                                                browser!
-                                            </iframe>
-                                        </center>
-                                    </fieldset>
-                                </div>
-                                <div class="content">
-                                    <!-- Begin Current Moon Phase HTML (c) MoonConnection.com  -->
-                                    <table cellpadding="0" cellspacing="0" border="0" width="128">
-                                        <tr>
-                                            <td align="center"><a href="https://www.moonconnection.com"
-                                                    target="mc_moon_ph"><img
-                                                        src="https://www.moonmodule.com/cs/dm/vn.gif" width="128"
-                                                        height="196" border="0" alt="" /></a>
-                                                <div style="position:relative;width:128px;">
-                                                    <div
-                                                        style="position:absolute;top:-20px;left:6px;background:#000000;width:116px;text-align:center;">
-                                                        <a href="https://www.moonconnection.com/" target="mc_moon_ph">
-                                                            <font color="#7F7F7F" size="1"
-                                                                face="arial,helvetica,sans-serif"><span
-                                                                    style="color:#7F7F7F;font-family:arial,helvetica,sans-serif;font-size:10px;">the
-                                                                    moon</span></font>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </table><!-- end moon phase HTML -->
-                                </div>
-                            </div>
-                            <div id="adopts" data-tab-content class="" align="center">
-                                <a href="https://magistream.com/creature/14696782"><img
-                                        src="https://magistream.com/img/14696782.gif" /></a>
-                                <a href="https://magistream.com/creature/14696783"><img
-                                        src="https://magistream.com/img/14696783.gif" /></a>
-                                <a href='https://finaloutpost.net/view/inMv0'><img
-                                        src='https://finaloutpost.net/s/inMv03.png'></a>
-                                <a href='https://finaloutpost.net/view/pS5Vs'><img
-                                        src='https://finaloutpost.net/s/pS5Vs3.png'></a>
-                                <a href="https://dragcave.net/view/TT271"><img
-                                        src="https://dragcave.net/image/TT271.gif" style="border-width:0"
-                                        alt="Adopt one today!" /></a>
-                                <a href="https://dragcave.net/view/SH1NI"><img
-                                        src="https://dragcave.net/image/SH1NI.gif" style="border-width:0"
-                                        alt="Adopt one today!" /></a>
-                            </div>
-                        </div>
-                        <div class="sideLinkDiv tabs" id="one">
-                            <div data-tab-target="#calendars" class="sideLinkStyle">
-                                <img src="./IMG/favicons/favicon_moon1.png">
-                                calendars
-                            </div>
-                            <div data-tab-target="#adopts" class="sideLinkStyle">
-                                <img src="./IMG/favicons/favicon_butterfly3.gif">
-                                adopts
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="containLeftBox">
-                        <div class="mailBox">
-                            <div id="stamps" data-tab-content class="active tabs" align="center">
-                                <img src="./IMG/stamps/stamp_flower1.gif">
-                                <img src="./IMG/stamps/stamp_house1.gif">
-                                <img src="./IMG/stamps/stamp_dove1.gif">
-                                <img src="./IMG/stamps/stamp_dove.gif">
-                                <img src="./IMG/stamps/stamp_gift1.gif">
-                                <img src="./IMG/stamps/stamp_window.gif">
-                                <img src="./IMG/stamps/stamp_flower2.gif">
-                                <img src="./IMG/stamps/stamp_rose.gif">
-                                <img src="./IMG/stamps/stamp_rose1.gif">
-                                <img src="./IMG/stamps/stamp_tea2.gif">
-                                <img src="./IMG/stamps/stamp_coffee.gif">
-                            </div>
-                            <div id="misc" data-tab-content class="content" align="center">
-                                <p><img src="./IMG/88x31/lucard.png"></p>
-                                <p>
-                                    <textarea><a href="https://lucard.neocities.org/"><img src="https://lucard.neocities.org/IMG/88x31/lucard.png"></a></textarea>
-                                </p>
-                                <p>add my button to your site with the code below!</p>
-                            </div>
-                        </div>
-                        <div class="sideLinkDiv" id="two">
-                            <div data-tab-target="#stamps" class="sideLinkStyle">
-                                <img src="./IMG/favicons/favicon_maple5.gif">
-                                stamps
-                            </div>
-                            <div data-tab-target="#misc" class="sideLinkStyle">
-                                <img src="./IMG/favicons/favicon_redbutterfly1.gif">
-                                link me!
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="papercontainer">
-                    <div class="listDisplay">
-                        <div class="semiheaderTitle">
-                            <semiheader>✷ links</semiheader>
-                        </div>
-                        <div class="listScrollBox">
-                            <div class="listItem">
-                                <div class="listItemPic"><a href="/about.html"><img src="./IMG/indexpics/cat1.png"></a>
-                                </div>
-                                <div class="listTextLink">
-                                    <menuLink>
-                                        <a href="/about.html">♥ about
-                                            <br>
-                                            me
-                                        </a>
-                                    </menuLink>
-                                </div>
-
-                                </a>
-                            </div>
-                            <div class="listItem">
-                                <div class="listItemPic"><a href="/ocs.html"><img
-                                            src="./IMG/indexpics/heartsmall1.png"></a>
-                                </div>
-                                <div class="listTextLink">
-                                    <menuLink>
-                                        <a href="/ocs.html">♥ ocs</a>
-                                        <br>
-                                        <smallLink><a href="https://morostide.blog.fc2.com/">↪ blog</a></smallLink>
-                                    </menuLink>
-                                </div>
-
-                                </a>
-                            </div>
-                            <div class="listItem">
-                                <div class="listItemPic"><img src="./IMG/indexpics/valsmall1.png"></div>
-                                <div class="listTextLink">
-                                    <menuLink>
-                                        <a href="">♥ art</a>
-                                        <br>
-                                        <smallLink><a href="https://lucard.blog.fc2.com/">↪ blog</a></smallLink>
-                                    </menuLink>
-                                </div>
-
-                                </a>
-                            </div>
-                            <div class="listItem">
-
-                                <div class="listItemPic"><img src="./IMG/gifs/gif_dove1.gif"></div>
-                                <div class="listTextLink">
-                                    <menuLink>
-                                        <a href="https://castlevania.123guestbook.com/"> ♥ guest
-                                            <br>
-                                            book</a>
-                                    </menuLink>
-                                </div>
-                            </div>
-                            <div class="listItem">
-                                <a href="">
-                                    <div class="listItemPic"><img src="./IMG/indexpics/skeletonkey1.png"></div>
-                                    <div class="listTextLink">
-                                        <menuLink>
-                                            <a href="">♥ more
-                                                <br>
-                                                links</a>
-                                        </menuLink>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="rightAccessories" src="./IMG/indexpics/bg_accessoriesSide.png">
-                </div>
-                <div class="cardcontainer">
-                    <img class="portrait_img" src="">
-                    <img class="frame" src="./IMG/indexpics/photoframe.png">
-                    <img class="accessories" src="./IMG/indexpics/bg_accessories.png">
-                    <img class="fairy" src="./IMG/gifs/gif_fairy5.gif">
-                    <img class="fairy2" src="./IMG/gifs/gif_fairy3.gif">
-                    <img class="unicorn" src="./IMG/gifs/gif_unicorn.gif">
-                    <img class="rockinghorse" src="./IMG/gifs/gif_rockinghorse1.gif">
-                    <div class="textbox">
-                        <header>☙ welcome</header>
+            <div class="row">
+                <div class="container1">
+                    <div class="description">
                         <div align="center">
-                            <a href="https://lucard.neocities.org/"><img src="./IMG/88x31/lucard.png"></a>
+                            <header2>before you enter</header2>
+                            <p>welcome to my personal website! i try to post my art, characters, and more here, but
+                                everything is a huge work in progress; some links may be broken and some pages may have
+                                content but will be
+                                unformatted.
+                            </p>
+
+                            <p> <b>before you view my site; please read the following notes below:</b></p>
+                        </div>
+                    </div>
+
+                    <div class="divider" align="center">
+                        <img src="./IMG/dividers/divider_rose2.gif">
+                    </div>
+
+                    <div class="d-flex row">
+                        <div class="col colStyle">
                             <p>
-                                aspho ♥ 26 ♥ trans man (it/he)
+                                <semiheader>CONTENT WARNINGS</semiheader>
+                            </p>
+
+                            <p><b>please do not follow or interact with me if you are under 18.</b> i am an adult; if
+                                i accidentally followed you if you're a minor, please let me know so i can unfollow.</p>
+
+                            <p>
+                                my website is <b><a href="https://www.mabsland.com/Adoption.html">rated MATURE</a></b>.
+                                content may include:
+                            </p>
+
+                            <ul>
+                                <li>suggestive images & partial nudity</li>
+                                <li>body horror, gore etc. (never realistic)</li>
+                                <li>links to external sites and media containing all of the above content</li>
+                            </ul>
+                            <p>in the future: for any mature images i might post, i will try to find ways to censor them
+                                with a
+                                thumbnail and click-to-view to see the image in full. i may also warn for any mature
+                                content on specific pages, site links etc. when necessary</p>
+                        </div>
+                        <div class="col colStyle">
+                            <p>
+                                <semiheader>ACCESSIBILITY</semiheader>
+                            </p>
+                            <p>i would like to make my site accessible to as many people as possible.
+                                however (for now) :
+                            <ul>
+                                <li>
+                                    my site is <b>desktop only.</b> it is not mobile compatible.
+                                </li>
+                                <li>
+                                    <b>javascript is required</b> for some features to function or
+                                    they will break if disabled, such as buttons and switches.
+                                </li>
+                                <li>im a coding newbie with very little free time & energy to work on my site. it might
+                                    take
+                                    me a while to learn to improve things!</li>
+                            </ul>
+                            </p>
+                            <p>as i become comfortable with my coding skills, i will try to find ways to make my pages
+                                size
+                                responsive
+                                and acessible for everyone. please excuse the mess and thank you for your patience
                             </p>
                         </div>
-                        <p>
-                            12/15/23: hi! welcome to my personal site. everything is a WIP, not all links may work. i need to make a splash page soon
-                        </p>
-                        <p>
-                            <b><i>MY SITE IS 18+ ONLY. please DO NOT follow or interact with me if you are
-                                underage.</i> if i have accidentally followed you if you are a minor, please let me
-                                know and i will unfollow you.</b>
-
-                            i will never post images that are sexually explicit, but in the future i may post mildly suggestive images &
-                            nonsexual artistic nudity, for example.
-
-                            i may also refer to external site links and media containing 18+ content (violence nudity
-                            etc).
-
-                            i will provide warnings if a link/page contains mature content, and i'll try to find a way
-                            to thumbnail mature images on my site with a click-to-view warning before viewing.
-                        </p>
-                        <p><b><i>for now, my site is desktop only. javascript will be required for some features to function or they will break if disabled.</i></b>
-                            i am a newbie/hobbyist coder doing this in my spare time. as i become more comfortable with learning to code & design pages, i will try to find ways to make my pages mobile friendly and
-                            acessible; if an existing page is unable to be converted to be mobile/accessibility friendly, i'll try to make a alternative version of it when possible.
-                        </p>
-                        <p>
-                            thank you for your understanding!
-                        </p>
-                        <div align="center">
-                            <img src="./IMG/dividers/divider_rose2.gif">
-                        </div>
                     </div>
-                    <div class="counter">
-                        <script language="javascript" type="text/javascript"
-                            src="//counter1.fc2.com/counter.php?id=89505915"></script><noscript><img
-                                src="//counter1.fc2.com/counter_img.php?id=89505915" /></noscript>
+                    <div class="bottom">
+                        <div class="row">
+                            <div class="col">
+                                <semiheader>TO ENTER MY SITE:</semiheader>
+                                <p>please click on the large artwork to the side/top. or click on
+                                    alucard here:</p>
+                                <div align="center">
+                                    <a href="https://lucard.neocities.org/home.html">
+                                        <img src="./IMG/indexpics/alucard1.png">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="musicplayercontainer">
-                    <div id="musicplayer">
-                        <div>
-                            <marquee scrollamount="8" class="songtitle"></marquee>
-                        </div>
-
-                        <table class="controls">
-                            <tr>
-                                <td>
-                                    <div class="prev-track" onclick="prevTrack()"><i class="fas fa-backward"></i></div>
-                                </td>
-                                <td>
-                                    <div class="playpause-track" onclick="playpauseTrack()"><i class="fas fa-play"></i>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="next-track" onclick="nextTrack()"><i class="fas fa-forward"></i></div>
-                                </td>
-                            </tr>
-                        </table>
-
-                        <div class="seeking">
-                            <div class="current-time">00:00</div>
-
-                            <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
-
-                            <div class="total-duration">0:00</div>
-                        </div>
-
-                        <audio id="music" src=""></audio>
-                    </div>
+                <div class="container2">
+                    <a href="https://lucard.neocities.org/home.html">
+                        <img class="img-fluid AYart" src="./IMG/indexpics/ay_ff141.png">
+                    </a>
                 </div>
             </div>
-        </div>
+            <div class="footer" align="center">
+                <div id='wolwebring'>
+                    <script type="text/javascript"
+                        src="https://wolwebring.neocities.org/onionring-variables.js"></script>
+                    <script type="text/javascript" src="https://wolwebring.neocities.org/onionring-widget.js"></script>
+                </div>
+                <div class="divider" align="center">
+                    <p><img src="./IMG/dividers/divider_rose3.gif"></p>
+                    <p><img src="./IMG/88x31/lucard.png"></p>
+
+                </div>
+            </div>
     </body>
 </main>
